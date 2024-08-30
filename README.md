@@ -1,7 +1,6 @@
 # Extractive Multi-document Summarization using K-means, Centroid-based Method, MMR, and Sentence Position
 
 Python implementation of Extractive Multi-document Summarization as described in [Extractive Multi-document Summarization using K-means, Centroid-based Method, MMR, and Sentence Position](https://www.researchgate.net/publication/338101046_Extractive_Multi-document_Summarization_using_K-means_Centroid-based_Method_MMR_and_Sentence_Position)
-by Hai Cao Manh, Huong Le Thanh and Tuan Luu Minh.
 
 ## Installation
 
@@ -19,26 +18,7 @@ We propose an approach to multi-document summarization based on k-means clusteri
 <img src="https://github.com/caomanhhaipt/Extractive-Multi-document-Summarization-using-Kmeans-Centroid-based-Method-MMR-and-Position/blob/master/img/model.PNG" width="800">
 
 
-## Generate summaries from dataset
 
-```shell
-# Running directly from the repository: (path to save: Data/DUC_2007/folder)
-methods/main_method/Kmeans_CentroidBase_MMR_SentencePosition.py --folder_to_save="folder"
-
-Notice: if you get a path error, the following command may be helpful:
-# Running directly from the repository:
-export PYTHONPATH=.
-```
-
-## Evalute results via rouge
-
-Please replace "test" in the "system_folder" variable with system folder (ex. "folder").
-```shell
-# Running directly from the repository:
-rouge/pyrouge_DUC_2007.py
-
-Notice: if you get an error, you can try running the source code directly with the Pycharm IDE.
-```
 
 ## Generate summary from novel data
 
